@@ -20,7 +20,7 @@ dependencies {
 
 Iterative update the version number
 
-### Step2 init to Application.java
+### Step 2 init to Application.java
 
 ```Java
 
@@ -28,7 +28,7 @@ RongIM.init(this);
 
 ```
 
-### Step3 connect rongcloud server
+### Step 3 connect rongcloud server
 
 ```Java
 
@@ -36,7 +36,7 @@ RongIM.connect(token)
 
 ```
 
-[token](http://www.rongcloud.cn/docs/index.html)
+[About token](http://www.rongcloud.cn/docs/index.html)
 
 ### Step 4 Other
 
@@ -54,6 +54,6 @@ RongIM.connect(token)
 
 [rongcloud web](rongcloud.cn)
 
-[github -> sealtalk](https://github.com/sealtalk/sealtalk-android)
+[sealtalk to github](https://github.com/sealtalk/sealtalk-android)
 
 
