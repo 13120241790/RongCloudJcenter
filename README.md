@@ -18,7 +18,13 @@ dependencies {
 
 ```
 
-Iterative update the version number
+- Iterative update the version number
+- IMLib is IM core
+- IMKit is IM UI
+- CallLib is Audio and video core
+- CallKit is Audio and video UI
+- CallLib or CallKit Selectable
+
 
 ### Step 2 init to Application.java
 
