@@ -3,7 +3,7 @@
 
 # Use
 
-## Step 1 with gradle 
+### Step 1 with gradle 
 
 ```Java
 
@@ -18,7 +18,9 @@ dependencies {
 
 ```
 
-## Step2 init to Application.java
+Iterative update the version number
+
+### Step2 init to Application.java
 
 ```Java
 
@@ -26,7 +28,7 @@ RongIM.init(this);
 
 ```
 
-## Step3 connect rongcloud server
+### Step3 connect rongcloud server
 
 ```Java
 
@@ -36,7 +38,7 @@ RongIM.connect(token)
 
 [token](http://www.rongcloud.cn/docs/index.html)
 
-## Step 4 Other
+### Step 4 Other
 
 - Use ConversationFragment
 - Use ConversationListFragment
