@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "cn.rongcloud.im"
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 2016120910
+        versionName "2.8.3 Stable"
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        config {
+            storeFile file("rong.key")
+            storePassword "Amigo123"
+            keyAlias "RongCloud"
+            keyPassword "Amigo123"
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config //for release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config //for release
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+
+        abortOnError false
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+preBuild << {
+}
+//task astyle(type: Exec) {
+//    commandLine 'bash', './script/format_code.sh'
+//}
+//preBuild.dependsOn astyle
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'cn.rongcloud.android:IMLib:2.8.3'
+    compile 'cn.rongcloud.android:IMKit:2.8.3.1'
+    compile 'cn.rongcloud.android:CallLib:2.8.3'
+    compile 'cn.rongcloud.android:CallKit:2.8.3.1'
+    // libs 中 happy dns.jar - okhttp.jar - okio.jar 为 qiniu存储所需依赖jar 融云 sdk 和你的 app 中都无需依赖
+    // org.apache.http.legacy.jar 为适配 Android tagetId 22 以上 jar
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.facebook.stetho:stetho:1.4.1'
+}
+apply plugin: 'com.google.gms.google-services'
