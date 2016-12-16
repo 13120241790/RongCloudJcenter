@@ -52,7 +52,7 @@ RongIM.connect(token)
 
 # More
 
-[rongcloud web](rongcloud.cn)
+[rongcloud web](http://rongcloud.cn/)
 
 [sealtalk to github](https://github.com/sealtalk/sealtalk-android)
 
