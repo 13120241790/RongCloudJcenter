@@ -9,10 +9,10 @@
 
 dependencies {
 
-    compile 'cn.rongcloud.android:IMLib:2.8.3'
-    compile 'cn.rongcloud.android:IMKit:2.8.3.1'
-    compile 'cn.rongcloud.android:CallLib:2.8.3'
-    compile 'cn.rongcloud.android:CallKit:2.8.3.1'
+    compile 'cn.rongcloud.android:IMLib:2.8.4'
+    compile 'cn.rongcloud.android:IMKit:2.8.4'
+    compile 'cn.rongcloud.android:CallLib:2.8.4'
+    compile 'cn.rongcloud.android:CallKit:2.8.4'
 
 }
 
@@ -33,6 +33,8 @@ dependencies {
 RongIM.init(this);
 
 ```
+
+Config : manifest.xml
 
 ### Step 3 connect rongcloud server
 
