@@ -25,6 +25,7 @@ dependencies {
 - CallKit is Audio and video UI
 - CallLib or CallKit Selectable
 
+注: 依赖 maven 的优点是不用下载 sdk 导入 module 等步骤 , 缺点是如果有更改布局文件的需求无法更改。
 
 ### Step 2 init to Application.java
 
