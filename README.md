@@ -13,7 +13,7 @@ dependencies {
     compile 'cn.rongcloud.android:IMKit:2.8.4'
     compile 'cn.rongcloud.android:CallLib:2.8.4'
     compile 'cn.rongcloud.android:CallKit:2.8.4'
-
+    compile 'cn.rongcloud.android:RedPacket:2.8.4'
 }
 
 ```
